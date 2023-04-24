@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript mergeshort</title>
+</head>
+
+<style>
+    p,h1{
+        background-color: teal;
+        margin: 20px auto;
+        text-align: center;
+        padding: 100px 0px ;
+        font-size: 30px;
+    }
+</style>
+<body>
+    
+    <h1>merge sort javascript </h1>
+
+    <p>merging tow array . using javascript .</p>
+
+
+
+
+
+    <script>
+        let data = [1,2,3,4]
+        let data2= [4,6,7];
+        const merge = (arr1, arr2)=>{
+                let data3= []
+                for(i=0; i<data.length  ; i++){
+                    data3[i]= data[i]
+                }
+                for(let i= 0; i<data2.length; i++){
+                    data3[data.length +i]= data2[i]
+                }
+                return data3; 
+
+        }
+        console.log( merge(data, data2))
+
+
+
+   //second example merge 
+   const merge2 = (arr1, arr2)=>{
+
+        const data3 =[...arr1,...arr2]
+        return data3
+   }
+   console.log(merge2(data, data2))
+    </script>
+</body>
+</html>

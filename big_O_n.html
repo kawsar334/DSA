@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    h1 {
+        background-color: blue;
+        padding: 50px 0px;
+        margin: 100px 0;
+    }
+</style>
+<body>
+    <h1>Big o Notation . </h1>
+    <!-- one -->
+    <script>
+        // const obj = {
+        //     name: "kawsar",
+        //     "age": "oerijoaweis"
+        // }
+        // console.log(Object.keys(obj))
+        // console.log(Object.entries(obj));
+        // console.log(Object.values(obj))
+    </script>
+    <!-- two -->
+    <script>
+    const  func=(n)=>{
+        let total= 0 
+        for(let i= 0; i<= n; i++){
+            total += n ;
+            
+        }
+        return total ;
+    }
+    console.log(func(5));
+
+    </script>
+    <!--  -->
+
+<!-- three -->
+<script>
+    const func2 = (n)=>{
+        return n *(n+1)/2;
+    }
+    console.log(func2(5));
+
+</script>
+<!-- four -->
+<script>
+    // const minLog = (n)=>{
+
+    //     for(let i =0; i<=Math.max(5, n); i++){
+    //         console.log(i)
+    //     }
+    // }
+    // minLog(7)
+    // maximum  log function
+    const maxLog = (n) => {
+
+        for (let i = 0; i <= Math.min(5, n); i++) {
+            console.log(i)
+        }
+    }
+    maxLog(4)
+
+    
+</script>
+
+<!--five  -->
+<script>
+
+    const uniqKey = (arr)=>{
+        let newArr = [];
+        for(let i =0; i<arr.length; i++){
+            let element = arr[i];
+            if(!newArr.includes(element)){
+                newArr.push(element)
+            }
+        }
+        return newArr
+    }
+    console.log(uniqKey(["kawsar","kf", "kawsar","firoz","firoz", ""]));
+</script>
+<!--  -->
+
+<script>
+    
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <h1>class expression </h1>
+    and 
+    <h1>class declaration </h1>
+    
+
+
+    <script>
+
+      // class expression
+        const myName = class{
+          constructor(){
+            this.name="name"
+          }
+          newName (){
+             `my name is kawsar firoz`
+          }
+
+        }
+    const name = new myName("name")
+    
+console.log(name)
+
+// class declation
+
+        class myAge {
+            constructor(name,age, height,fat ){
+                this.age=age ;
+                this.height=height;
+                this.name = name;
+                this.fat=fat  
+            }
+            get firoz(){
+              return `my name is ${this.name} , `
+            }
+          
+            set firoz(value){
+             this.name = value
+            }
+        }
+        const  age= new myAge("kawsar firoz",28, 6,'fat') 
+
+        const firoz = new myAge("FIROZ", 2020, 2929, 'SLDKFJSDL');
+        firoz.firoz="isdniddididi"
+       console.log(firoz.firoz);
+    </script>
+</body>
+</html>

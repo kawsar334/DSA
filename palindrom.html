@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1>Palindrom Number</h1>
+    <p>An integer is a palindrome whenit reads the same forward and backward</p>
+    <p>example 121</p>
+    <script>
+
+//An integer is a palindrome whenit reads the same forward and backward 
+// example  121 ;
+
+
+
+const isPalindrome =(x)=>{
+    // palindrom number 
+    // const result = Number(x.toString().split("").reverse().join(""))
+    // palindrom string 
+    const result = x===x.toString().split("").reverse().join("")
+    console.log(result);
+}
+
+
+isPalindrome(121)
+
+
+
+
+    </script>
+</body>
+</html>

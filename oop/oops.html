@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object oriented programming</title>
+</head>
+<style>
+    a {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    p {
+        margin: 100px 0px;
+        text-align: center;
+        padding: 100px 0px;
+        background-color: teal;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 20px;
+        transform: rotate(5deg);
+        cursor: pointer;
+        transition: 1s ease all;
+        
+
+
+    }
+
+    .active {
+        transform: rotate(0deg);
+        background-color: blue;
+
+
+    }
+</style>
+
+<body>
+
+
+
+
+    fout principles of oop ;
+    <a href="#">
+
+        1.abstraction
+    </a>
+    <a href="#Encapsulation">
+        2.Encapsulation
+
+    </a>
+    <a href="#inheritance">
+
+        3.inheritance
+    </a>
+    <a href="#polimorphism">
+        4.polimorphism
+
+    </a>
+
+    <p><b>1.abstraction:</b>
+        Hide something for simplicity
+    </p>
+    <p id="Encapsulation"><b>2.Encapsulation:</b>
+        Keep properties and method private. that will not work outside of class
+
+    </p>
+    <p id="inheritance"><b>3.inheritance:</b>
+        child classwill take matching properties and values from parent class ;
+
+    </p>
+    <p id="polimorphism"><b> 4.polimorphism:</b>
+
+        this will behave many ways. a child class can overwrite a method that inherit from parent class ;
+    </p>
+
+
+    <script>
+
+
+
+
+        // four rules of function constructor
+        // create an empty object
+        //function is called this ={}
+        //{} object linked to the prototype 
+        //{} will return automatically 
+        const MyComputer = function (name, model) {
+           this.name = name;
+           this.model=model;
+          this.aboutComputer=()=>{
+            console.log(`the computer name ${this.name} and model ${this.model}`)
+           }
+
+
+           this.partComputer = ()=>{
+                        console.log(`the computer name ${this.name} and model ${this.model}`)
+           }
+         
+        }
+
+
+        const computer = new MyComputer("hp ", "40404040")
+        const hp = new MyComputer("hp", "kdslddjfksd");
+        const tosiba = new MyComputer("tosiba ", "sjdflaskf");
+
+        computer.aboutComputer()
+        hp.partComputer();
+        tosiba.aboutComputer();
+
+
+
+
+
+
+
+        // dom manipulation 
+
+        const pragraph = document.querySelectorAll("p")
+        pragraph.forEach((p) => {
+
+            p.addEventListener("mouseover", () => {
+                p.classList.add("active");
+            })
+
+
+        })
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype</title>
+</head>
+<style>
+    a {
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+    p {
+        margin: 100px 0px;
+        text-align: center;
+        padding: 100px 0px;
+        background-color: crimson;
+        display: flex;
+        flex-direction: column;
+        color: white;
+        font-size: 40px;
+        transform: rotate(5deg);
+        cursor: pointer;
+        transition: 1s ease all;
+
+
+
+    }
+
+    .active {
+        transform: rotate(0deg);
+        background-color: blue;
+
+
+    }
+</style>
+
+<body>
+
+
+
+
+
+
+    <p>
+        <b>prototype</b>
+    </p>
+
+
+    <script>
+
+
+        
+        const arr = [23, 4, 5, 56, 3];
+        // const obj={
+        //     name:"kawsar ",
+        //     age:"eijsodfks",
+        //     cv:"cvcvcvcvcv",
+            
+        // }
+        // console.log(arr.filter((i) => i>10));
+        // console.log(Array.prototype);
+        // console.log(Object.prototype)
+        // console.log(new Array());
+        
+
+
+        //filter method with prototype
+        Array.prototype.filter = function(){
+                    let arr = [];
+                    for(let i = 0; i<this.length; i++){
+                        if(this[i] %2==0){
+
+                            arr.push(this[i])
+                        }
+                       
+                    }
+                    return arr
+        }
+
+        console.log([2, 4, 56,3].filter())
+
+
+
+
+
+
+
+
+
+
+
+        // dom manipulation 
+        const pragraph = document.querySelectorAll("p")
+        pragraph.forEach((p) => { p.addEventListener("mouseover", () => { p.classList.add("active"); }) })
+
+    </script>
+</body>
+
+</html>
